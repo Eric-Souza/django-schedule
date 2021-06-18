@@ -1,0 +1,9 @@
+{% extends "model_body.html" %}
+
+{% block content %}
+  <ul style="font-size: 18px;">
+    {% for event in events %}
+      <li>{{event.title}} - {{event.format_date}}</li> <br/>
+    {% endfor %}
+  </ul>
+{% endblock %}

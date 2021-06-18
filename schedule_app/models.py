@@ -11,3 +11,6 @@ class Event(models.Model):
 
     def __str__(self):
         return self.title
+
+    def format_date(self):
+        return self.event_date.strftime('%d/%m/%Y %H:%m')
